@@ -1,0 +1,17 @@
+:root{ --bar1:6px; --bar2:6px; --bar3:6px; --bar4:6px; --bar5:6px; --bg1:#060616; --neon1:#7c3aed; --neon2:#06b6d4;}
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+body,html,#root{height:100%;margin:0;background:radial-gradient(circle at 10% 10%, #07102a, var(--bg1)); color:white;}
+.udaan-root{padding:28px;}
+.udaan-container{display:grid;grid-template-columns:320px 1fr 320px;gap:22px;align-items:start;}
+.glass{background:linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03));backdrop-filter: blur(10px) saturate(120%);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:18px;box-shadow: 0 8px 30px rgba(2,6,23,0.6);}
+.avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#3b82f6,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:white;box-shadow:0 6px 18px rgba(124,58,237,0.18)}
+.profile-card{padding:6px;}
+.skill-pill{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;font-size:13px}
+.badge-pill{background:linear-gradient(90deg,#ffd166,#f08a5d);padding:6px 10px;border-radius:999px;color:#111;font-weight:700;}
+.mentor-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:18px;min-height:600px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.input-area input{flex:1;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:rgba(0,0,0,0.25);color:white}
+.btn{padding:8px 12px;border-radius:10px;border:none;background:var(--neon1);color:white;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:white}
+.waveform{margin-top:10px}
+.bars{display:flex;gap:6px;align-items:end;height:28px}
+.bar{width:6px;background:linear-gradient(180deg,var(--neon1),var(--neon2));height:var(--bar1);border-radius:3px;transition:height 120ms ease}
