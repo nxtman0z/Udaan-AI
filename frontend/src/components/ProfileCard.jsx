@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './profilecard.css';
+import '../styles/profilecard.css';
 const API = process.env.REACT_APP_API_URL || 'http://localhost:5004';
 export default function ProfileCard(){
   const [profile, setProfile] = useState(null);
