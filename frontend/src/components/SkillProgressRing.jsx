@@ -1,5 +1,5 @@
 import React from 'react';
-import './skillring.css';
+import '../styles/skillring.css';
 export default function SkillProgressRing({ progress=0, goal=100 }) {
   const radius = 60;
   const stroke = 10;
